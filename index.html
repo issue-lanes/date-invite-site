@@ -19,8 +19,8 @@
     />
     <meta property="og:url" content="https://issue-lanes.github.io/date-invite-site/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="./assets/index-D410wSVh.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DztbtrQc.css">
+    <script type="module" crossorigin src="./assets/index-B6Ia5tTr.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CfMOylYM.css">
   </head>
   <body>
     <main>
@@ -33,6 +33,9 @@
         </div>
         <p class="shy" data-testid="shy" data-t="shy" hidden></p>
         <button class="link" data-testid="not-now" data-t="notNow"></button>
+        <!-- Anna peeks in from the bottom corner opposite "no" (which rests on the left, RTL).
+             main.ts sets src after the page's load, and never under reduced motion. -->
+        <img class="peek" data-src="avatar/pose-2.webp" alt="" />
       </section>
 
       <section id="yay" hidden>
