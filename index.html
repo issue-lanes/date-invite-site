@@ -19,8 +19,8 @@
     />
     <meta property="og:url" content="https://issue-lanes.github.io/date-invite-site/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="./assets/index-S1CzuGRs.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-1onasiFO.css">
+    <script type="module" crossorigin src="./assets/index-BYerMpSk.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DztbtrQc.css">
   </head>
   <body>
     <main>
@@ -36,16 +36,21 @@
       </section>
 
       <section id="yay" hidden>
-        <div class="avatar" data-testid="avatar">
-          <svg viewBox="0 0 120 120" width="160" height="160" role="img" aria-label="👑">
-            <circle cx="60" cy="74" r="34" fill="#f3d9b1" stroke="#111" stroke-width="3" />
-            <path d="M28 52 L36 22 L50 42 L60 16 L70 42 L84 22 L92 52 Z"
-              fill="#d9a62e" stroke="#111" stroke-width="3" stroke-linejoin="round" />
-            <circle cx="48" cy="76" r="3.5" fill="#111" />
-            <circle cx="72" cy="76" r="3.5" fill="#111" />
-            <path d="M50 88 Q60 97 70 88" fill="none" stroke="#111" stroke-width="3"
-              stroke-linecap="round" />
-          </svg>
+        <!-- the testid div holds pose 1 (a test wants one img in it); poses 2, 3 sit beside it -->
+        <div class="avatar">
+          <div data-testid="avatar">
+            <svg viewBox="0 0 120 120" width="160" height="160" role="img" aria-label="👑">
+              <circle cx="60" cy="74" r="34" fill="#f3d9b1" stroke="#111" stroke-width="3" />
+              <path d="M28 52 L36 22 L50 42 L60 16 L70 42 L84 22 L92 52 Z"
+                fill="#d9a62e" stroke="#111" stroke-width="3" stroke-linejoin="round" />
+              <circle cx="48" cy="76" r="3.5" fill="#111" />
+              <circle cx="72" cy="76" r="3.5" fill="#111" />
+              <path d="M50 88 Q60 97 70 88" fill="none" stroke="#111" stroke-width="3"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+          <img class="f2" data-src="avatar/pose-2.webp" alt="" />
+          <img class="f3" data-src="avatar/pose-3.webp" alt="" />
         </div>
         <p class="chip" data-testid="yay" data-t="chip"></p>
         <h2 data-t="yayTitle"></h2>
@@ -61,6 +66,16 @@
       </section>
 
       <section id="send" hidden>
+        <div class="hearts" aria-hidden="true">
+          <i>♡</i>
+          <i>♡</i>
+          <i>♡</i>
+          <i>♡</i>
+          <i>♡</i>
+          <i>♡</i>
+          <i>♡</i>
+          <i>♡</i>
+        </div>
         <img class="pose" data-src="avatar/pose-3.webp" alt="" />
         <p class="summary" data-testid="summary"></p>
         <p class="message" data-testid="message"></p>
